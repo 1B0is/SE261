@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Send Message (POST)</title>
+  </head>
+
+  <body class="min-h-screen flex items-center justify-center bg-gray-100">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md space-y-4">
+      <h1 class="text-2xl font-bold text-center text-gray-800">
+        Send Message (POST)
+      </h1>
+
+      <input
+        id="msg"
+        type="text"
+        placeholder="Type a message..."
+        class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+
+      <button
+        id="btnSend"
+        class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
+      >
+        Send
+      </button>
+
+      <button
+        id="btnClear"
+        class="w-full bg-gray-300 text-gray-800 py-2 rounded hover:bg-gray-400 transition"
+      >
+        Clear
+      </button>
+
+      <p id="status" class="text-sm text-gray-600"></p>
+
+      <pre id="output"></pre>
+    </div>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
